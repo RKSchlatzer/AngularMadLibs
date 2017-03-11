@@ -1,0 +1,16 @@
+body {
+  display: inline-block;
+}
+
+.input {
+  width: 900px;
+}
+
+.styled {
+  color: red;
+}
+
+
+h1 {
+  color: red;
+}

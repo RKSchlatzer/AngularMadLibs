@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Angular CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <title>Messing With Angular</title>
+</head>
+
+<body ng-app>
+
+<div class="string-input">
+<h1>Example 1: String</h1>
+  <h3>Noun: <input type="text" ng-model="noun"/>  Adjective: <input type="text" ng-model="adjective"/></h3>
+</div>
+
+<div>
+        <h2>Hi, my name is {{noun}} and my favorite activity is to {{adjective}}</h2><br />
+</div>
+
+<div class="math-input">
+  <h1>Example 2: Math</h1>
+  <h3>Feed Me A Number: </h3> <input type="text" ng-model="num"/>  <h3>Give Me a Second Number: </h3> <input type="text" ng-model="num2"/>
+</div>
+
+<div>
+  <h2>Your first number, {{num}} times your second number, {{num2}} is <span>{{num*num2}}</span></h2><br />
+</div>
+
+<div class="logical-input">
+<h1>Example 3: Logical</h1>
+<h3>My favorite color is green </h3>
+<h3>Type any other color into this field to see if it's my favorite color!</h3><input type="text" ng-model="color" id="logcolor"><button type="button" name="button" onclick="doStuff()">Click Me!</button>
+</div>
+
+<div class="logical">
+  <h3>My favorite color is totally <span>{{color}}</span></h3>
+  <h3>My favorite color is totally <span id="output"></span></h3>
+</div>
+
+
+
+</body>
+
+</html>
